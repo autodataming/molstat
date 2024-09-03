@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='molstat',
-    version='0.1',
+    version='0.2',
     py_modules=['molstat'],
     install_requires=[
         'numpy',
