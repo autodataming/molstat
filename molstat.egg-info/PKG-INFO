@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: molstat
-Version: 0.3
+Version: 0.3.1
 Summary: 用于计算分子性质和绘制性质分布的工具。
 Home-page: https://github.com/autodataming/molstat
 Author: Zhaoqiang Chen
