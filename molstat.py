@@ -8,7 +8,7 @@ from rdkit.Chem import Descriptors
 import matplotlib.pyplot as plt
 import os 
 import argparse
-
+from tSNE.tSNE import tSNE 
 
 
 import warnings
@@ -105,15 +105,22 @@ def molstat(molf):
 
 def main():
     parser = argparse.ArgumentParser(description="Calculate molecular descriptors and plot molecular weight distribution.")
-    parser.add_argument('filename', type=str, help='Path to the SDF file containing molecular structures.')
+    parser.add_argument('filenames', type=str, nargs='+', help='Path(s) to the SDF file(s) containing molecular structures.')
+    parser.add_argument('-f', '--function', type=str, choices=['tSNE'], help='Function to apply (currently supports tSNE).')
+    
     args = parser.parse_args()
-    molstat(args.filename)
-
-
+    
+    if args.function == 'tSNE':
+        print("tSNE function not implemented yet.")  # Placeholder for future implementation
+        print("filenames",args.filenames)
+        tSNE(args.filenames)
+    else:
+        molstat(args.filenames[0])
 
 if __name__ == '__main__':
     '''
     '''
     filename = "test.sdf"
     filename = "L3400.sdf"
-    molstat(filename)
+    # molstat(filename)
+    main()
