@@ -9,13 +9,13 @@ import matplotlib.pyplot as plt
 import os 
 import argparse
 from tSNE.tSNE import tSNE 
-
+from rdkit import RDLogger
 
 import warnings
 
 # 忽略所有运行时警告
 warnings.filterwarnings("ignore", category=RuntimeWarning)
-from rdkit import RDLogger
+
 
 # 关闭RDKit的警告信息
 lg = RDLogger.logger()

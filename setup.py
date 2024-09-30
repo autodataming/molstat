@@ -1,4 +1,5 @@
 # setup.py
+from setuptools import setup, find_packages
 from setuptools import setup
 
 setup(
@@ -22,6 +23,11 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/autodataming/molstat',  # GitHub 仓库地址
+
+    packages=find_packages(),  # Finds molstat and tSNE as packages
+    include_package_data=True,  # Ensure package data is included
+    package_data={'tSNE': ['*.py']},  # Include all Python files in tSNE
+
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
