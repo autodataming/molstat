@@ -40,7 +40,7 @@ The script will generate a plot of the molecular weight distribution and save it
 ```bash
 molstat  -f tSNE file1.sdf file2.sdf file3.sdf
 ```
-![图片替代文本](图片URL)
+
 ![chemspace.png](./imgs/chemspace.png)
 
 The script will generate a plot of the chemical space.
