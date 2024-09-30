@@ -32,12 +32,20 @@ Run the script with an SDF file as an argument:
 ```bash
 molstat  your_file.sdf
 ```
-
-
-
-## Output
+![MWL1000.png](./imgs/MWL1000.png)
 
 The script will generate a plot of the molecular weight distribution and save it as a PNG file with the name structure: `MW<basename>.png`, where `<basename>` is the name of the input file without the extension.
+
+
+```bash
+molstat  -f tSNE file1.sdf file2.sdf file3.sdf
+```
+![图片替代文本](图片URL)
+![chemspace.png](./imgs/chemspace.png)
+
+The script will generate a plot of the chemical space.
+
+
 
 ## Example
 
